@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="600.0" style="-fx-background-color: #C3BFBF;" type="Pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.ProductoController">
+   <children>
+      <TableView fx:id="tblTablaProducto" layoutX="22.0" layoutY="100.0" prefHeight="200.0" prefWidth="556.0">
+         <columns>
+            <TableColumn fx:id="productoID" prefWidth="70.0" text="ID" />
+            <TableColumn fx:id="productoNombre" prefWidth="190.0" text="Nombre" />
+            <TableColumn fx:id="productoPrecio" prefWidth="201.0" text="Precio ($)" />
+            <TableColumn fx:id="comandoProducto" prefWidth="94.0" text="Editar/Eliminar" />
+         </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#5518e4" glyphName="USER_PLUS" layoutX="37.0" layoutY="78.0" onMouseClicked="#nuevoProducto" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView fill="#5518e4" glyphName="REFRESH" layoutX="71.0" layoutY="78.0" onMouseClicked="#refrescar" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <Label layoutX="19.0" layoutY="7.0" text="Productos">
+         <font>
+            <Font name="Verdana" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

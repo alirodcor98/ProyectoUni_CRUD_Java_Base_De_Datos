@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="600.0" style="-fx-background-color: #C3BFBF;" type="Pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.FacturaController">
+   <children>
+      <TableView fx:id="tblTablaFactura" layoutX="22.0" layoutY="100.0" prefHeight="200.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="facturaID" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="facturaReferencia" prefWidth="94.0" text="Referencia" />
+            <TableColumn fx:id="facturaFecha" prefWidth="84.0" text="Fecha" />
+            <TableColumn fx:id="facturaNombreCliente" minWidth="0.0" prefWidth="129.0" text="Nombre" />
+            <TableColumn fx:id="facturaApellidoCliente1" minWidth="0.0" prefWidth="122.0" text="Apellido" />
+            <TableColumn fx:id="comando" minWidth="0.0" prefWidth="89.0" text="Editar/Eliminar" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fill="#5518e4" glyphName="FILE" layoutX="32.0" layoutY="78.0" onMouseClicked="#nuevaFactura" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fill="#5518e4" glyphName="REFRESH" layoutX="69.0" layoutY="78.0" onMouseClicked="#refrescarFactura" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <Label alignment="TOP_LEFT" layoutX="19.0" layoutY="7.0" prefHeight="38.0" prefWidth="570.0" text="Facturas">
+         <font>
+            <Font name="Verdana" size="30.0" />
+         </font></Label>
+   </children>
+</fx:root>
